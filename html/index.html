@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Rick and Morty</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <header class="container-fluid mb-5">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">   
+                    <img id="icone" src="./images/RAMICON.png" alt="Bootstrap" width="60">
+                </a>
+            </div>
+        </nav>
+
+        <div class="row justify-content-center text-center g-4 p-3 p-sm-5">
+            <div class="col-12">
+                <h1 class="title">API de Rick and Morty</h1>
+            </div>
+
+            <div class="col-5 d-flex justify-content-center">
+                <div class="input-group mb-3 input-group-lg">
+                    <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar"
+                        aria-describedby="basic-addon1">
+
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="bi bi-search"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="container">
+
+            <div class="row g-5" id="espaco-cards">
+
+                <div class="col-12 col-md-6 col-lg-4" id='personagem'>
+                    <div class="card w-100 cardCss">
+                        <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" class="card-img-top"
+                            alt="Avatar">
+                        <div class="card-body px-4">
+                            <h5 class="card-title">
+                                Nome da Personagem
+                            </h5>
+
+                            <p class="card-text">
+                                <span class="text-danger">
+                                    <i class="bi bi-caret-right-fill"></i>
+                                </span>
+                                Vivo - Humano
+                            </p>
+
+                            <dl>
+                                <dt>Última localização conhecida:</dt>
+                                <dd>Planeta XPTO</dd>
+
+                                <dt>Visto a última vez em:</dt>
+                                <dd>Nome do Capitulo</dd>
+                            </dl>
+
+                            <a class="btn-personagem" href="personagens.html">Detalhes do personagem</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 d-flex justify-content-center">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item" id="botao-prev">
+                                <a class="page-link btn-pagination">
+                                    <i class="bi bi-chevron-compact-left"></i>
+                                    Anterior
+                                </a>
+                            </li>
+
+                            <li class="page-item" id="botao-atual">
+                                <a class="page-link btn-pagination">1</a>
+                            </li>
+                            
+                            <li class="page-item" id="botao-next">
+                                <a class="page-link btn-pagination">
+                                    Próximo
+                                    <i class="bi bi-chevron-compact-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="container-fluid p-0" id="footer">
+        <div class="container-fluid">
+            <div class="row informacoes">
+                <div class="col-4 personagens"></div>
+                <div class="col-4 localizacao"></div>
+                <div class="col-4 episodios"></div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row desenvolvido justify-content-center">
+                    <div class="col-12">
+                    Desenvolvido por: Arthur Menezes Silva em 2023
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/script.js"></script>   
+</body>
+</html> 

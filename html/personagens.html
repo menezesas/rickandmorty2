@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Rick and Morty - Personagem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/personagens.css">
+</head>
+<body>
+    <header class="container-fluid mb-5">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./image/RICK_MORTY_ICON - 1.png" alt="Bootstrap" width="60">
+                </a>
+            </div>
+        </nav>
+
+        <div class="row justify-content-center text-center g-4 p-3 p-sm-5">
+
+            <div class="col-12">
+                <h1 class="title">API de Rick and Morty</h1>
+            </div>
+        </div>
+
+    </header>
+    
+
+    <main class="container-fluid justify-content-center">
+        <div class="container-fluid justify-content-center">
+
+            <div class="row g-5 justify-content-center" id="espaco-cards">
+
+                <div class="col-12 col-md-6 col-lg-4" id='personagem'>
+                    <div class="card w-100 cardCss">
+                        <img src="https://rickandmortyapi.com/api/character/avatar/1.jpeg" class="card-img-top"
+                            alt="Avatar">
+                        <div class="card-body px-4">
+                            <h5 class="card-title">
+                                Nome da Personagem
+                            </h5>
+
+                            <p class="card-text">
+                                <span class="text-danger">
+                                    <i class="bi bi-caret-right-fill"></i>
+                                </span>
+                                Vivo - Humano
+                            </p>
+
+                            <dl>
+                                <dt class="cinza">Última localização conhecida:</dt>
+                                <dd>Planeta XPTO</dd>
+
+                                <dt class="cinza">Visto a última vez em:</dt>
+                                <dd>Nome do Capitulo</dd>
+
+                                <dt class="cinza">Planeta originário:</dt>
+                                <dd>Earth</dd>
+
+                                <dt class="cinza">Gênero:</dt>
+                                <dd>Male</dd>
+                            </dl>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-5 justify-content-center">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <button type="button" class="btn btn-lg" id="btn-home">Home</button>
+                    </div>
+                </div>
+            </div>       
+        </div>
+    </main>
+
+    
+    <footer class="container-fluid p-0" id="footer">
+        <div class="container-fluid">
+            <div class="row informacoes">
+                <div class="col-4 personagens"></div>
+                <div class="col-4 localizacao"></div>
+                <div class="col-4 episodios"></div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row desenvolvido justify-content-center">
+                    <div class="col-12">
+                    Desenvolvido por: <span>Arthur Menezes Silva</span> em 2023
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/personagens.js"></script>
+</body>
+</html>
